@@ -1,0 +1,50 @@
+.introContainer {
+    width: 100vw;
+    padding-top: 40px;
+}
+
+.introContainer .mainPhoto{
+    height: 50vh;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 24vw;
+    margin: 0 auto;
+    background: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(180deg, #5dcefd,#3f99be,#1e5c76, transparent);
+}
+
+.introContainer .mainPhoto img{
+    width: 85%;  
+    background: transparent;
+}
+
+.introContainer .intoTitle{ 
+    text-align: center; 
+    padding-top: 40px;
+}
+
+#name{
+    font-size: 3rem;
+    font-size: 600;   
+}
+
+#skillsNames{
+    font-size: 1.2rem;
+    color: #5dcefd;
+    font-size: 500;
+}
+
+.introContainer .buttons{
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.introContainer .buttons button{
+    width: 150px;
+}
+
