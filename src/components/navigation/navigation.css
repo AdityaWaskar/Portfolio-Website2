@@ -1,0 +1,50 @@
+nav{
+    position: fixed;
+    top: 40%; 
+    left: 0;
+    padding-left: 10px ;
+}
+
+nav .column{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+nav .top_section{
+    display: flex;  
+    align-items: center; 
+    width: 100%;
+    transition: all 1s;
+    padding-bottom: 20px;
+}
+
+nav .routes{ 
+    padding: 2px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 20px;
+}
+
+nav .routes .link div, nav .routes .link svg{
+
+    background-color: transparent;
+}
+
+nav .routes .link{
+    display: flex;
+    gap: 10px; 
+    transition: 0.2s cubic-bezier(0.6, -0.28,0.735, 0.045);
+    border-right: 4px solid transparent;
+}
+
+nav .routes .link:hover{
+    border-right: 4px solid var(--main-color);
+    transition: 0.2s cubic-bezier(0.6, -0.28,0.735, 0.045);
+    background: var(--main-color);
+}
+
+nav .routes .link_text{
+    white-space: nowrap;
+}

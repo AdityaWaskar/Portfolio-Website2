@@ -1,12 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Intro from "./components/intro/Intro";
+import { Intro, Navigation } from "./components";
 
 function App() {
   return (
     <section>
+      <Navigation />
       <Intro />
-      {/* <Intro /> */}
     </section>
   );
 }

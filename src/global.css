@@ -37,3 +37,7 @@ button:hover{
     color: black;
     background: var(--main-color);
 }
+
+a{
+    text-decoration: none;
+}

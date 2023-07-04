@@ -35,6 +35,7 @@
     font-size: 1.2rem;
     color: #5dcefd;
     font-size: 500;
+    width: 100%;
 }
 
 .introContainer .buttons{
@@ -48,3 +49,36 @@
     width: 150px;
 }
 
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#textCursor{
+    color: var(--main-color);
+    padding-left: 2px;
+    font-size: 1.2rem;
+    animation: blink .5s infinite;
+}
+
+.introContainer .links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    background: transparent; 
+    padding: 5px;
+    border-radius: 4px;
+    transition: all .5s ease;
+} 
+
+ 
