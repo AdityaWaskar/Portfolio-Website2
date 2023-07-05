@@ -1,0 +1,37 @@
+.skillsContainer{
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: black;
+    gap: 13vh;
+}
+
+.skillsContainer .top{
+    text-align: center;
+}
+
+.skillsContainer .top .subtitle{
+    font-size: .9rem;
+    color: silver;
+    padding: 20px 0;
+}
+
+.skillsContainer .top .title{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--main-color);
+    padding-bottom: 30px;
+}
+
+.skillsContainer .down{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 70vw;
+    height: 50vh;
+}
+
+.skillsContainer .down .skillCardContainer:last-child{
+    margin-top: 20vh;
+}

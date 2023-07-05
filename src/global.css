@@ -30,6 +30,7 @@ button{
     padding: 10px 20px;
     border: 2px solid var(--main-color);
     color: var(--main-color);
+    background-color: black;
 }
 
 button:hover{

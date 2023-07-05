@@ -1,8 +1,9 @@
 nav{
     position: fixed;
-    top: 40%; 
+    top: 35%; 
     left: 0;
     padding-left: 10px ;
+    z-index: 99;
 }
 
 nav .column{
@@ -42,9 +43,17 @@ nav .routes .link{
 nav .routes .link:hover{
     border-right: 4px solid var(--main-color);
     transition: 0.2s cubic-bezier(0.6, -0.28,0.735, 0.045);
-    background: var(--main-color);
 }
+
 
 nav .routes .link_text{
     white-space: nowrap;
 }
+
+
+nav .routes .link:hover .link_text,
+nav .routes .link:hover .icon svg path
+{
+    color: var(--main-color);
+}
+
