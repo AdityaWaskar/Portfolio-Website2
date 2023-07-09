@@ -1,0 +1,30 @@
+.projectContainer{
+    background-color: black;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* .projectContainer .title div{
+    justify-content: center;
+} */
+
+.projectContainer .top .subtitle{
+    font-size: .9rem;
+    color: silver;
+    padding: 20px 0;
+}
+ 
+.projectContainer .top .title{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--main-color);
+    padding-bottom: 30px;
+}
+
+.projectContainer .bottom{
+    height: 80vh;
+    display: flex;
+    margin-right    : 20px;
+    margin-left: 50px;
+
+}

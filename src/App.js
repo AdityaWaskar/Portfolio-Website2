@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Intro, Navigation, Skills } from "./components";
+import { Experience, Intro, Navigation, Projects, Skills } from "./components";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 
@@ -29,6 +29,8 @@ function App() {
       <Navigation />
       <Intro />
       <Skills />
+      <Projects />
+      <Experience />
     </motion.section>
   );
 }

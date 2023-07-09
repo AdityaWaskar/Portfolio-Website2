@@ -8,7 +8,7 @@ import { CgWebsite } from "react-icons/cg";
 import { SiCplusplus, SiSolidity } from "react-icons/si";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
-import AnimatedTextCharacter from "./AnimatedTextCharacter";
+import AnimatedTextCharacter from "../AnimatedTextCharacter";
 
 const frontendSkills = [
   {
@@ -81,11 +81,7 @@ const Skills = () => {
   return (
     <div className="skillsContainer">
       <div ref={ref} className="top">
-        <motion.div
-          //   initial={{ x: -1000 }}
-          animate={mainControls}
-          className="subtitle"
-        >
+        <motion.div animate={mainControls} className="subtitle">
           What Skills I Have
         </motion.div>
         <motion.div className="title">

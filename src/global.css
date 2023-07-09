@@ -42,3 +42,7 @@ button:hover{
 a{
     text-decoration: none;
 }
+
+.text_center{
+    text-align: center;
+}

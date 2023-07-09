@@ -1,5 +1,6 @@
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { CgEnter } from "react-icons/cg";
 
 const AnimatedTextCharacter = ({ text }) => {
   const ref = useRef(null);
@@ -12,7 +13,6 @@ const AnimatedTextCharacter = ({ text }) => {
     } else {
       mainControls.start("hidden");
     }
-    console.log(isInView);
   }, [isInView]);
 
   const letters = Array.from(text);
@@ -54,6 +54,7 @@ const AnimatedTextCharacter = ({ text }) => {
       style={{
         overflow: "hidden",
         display: "flex",
+        justifyContent: "center",
         fontSize: "2rem",
       }}
       variants={container}
