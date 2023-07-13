@@ -1,9 +1,9 @@
 .experienceContainer{
     background-color: black;
-    height: 100vh;
+    min-height: 100vh;
     width: auto;
     padding-left: 100px;
-    overflow-x: hidden;
+    overflow: hidden;
     padding-top: 30px ;
 }
 

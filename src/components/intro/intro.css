@@ -1,5 +1,4 @@
-.introContainer {
-    /* width: 100vw; */
+.introContainer { 
     height: 100vh;
     padding-top: 40px; 
     background-color: black;
@@ -84,5 +83,9 @@
     border-radius: 4px;
     transition: all .5s ease;
 } 
+
+.introContainer .links a:hover path{
+    color: var(--main-color);
+}
 
  

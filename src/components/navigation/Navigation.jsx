@@ -32,7 +32,7 @@ const navElements = [
   {
     name: "Contact Us",
     icon: <AiFillMail size={30} />,
-    link: "#contacUs",
+    link: "#contactUs",
   },
 ];
 

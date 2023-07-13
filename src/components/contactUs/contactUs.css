@@ -2,6 +2,7 @@
     min-height: 100vh;
     background-color: black;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .contactUSContainer .subContainer{
@@ -19,6 +20,10 @@
 .contactUSContainer .right{
     /* background-color: cyan; */ 
     flex: 1;
+}
+
+.contactUSContainer .top{
+    width: 100%;
 }
 
 .contactUSContainer .top .subtitle{

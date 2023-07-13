@@ -7,6 +7,7 @@ import {
   Projects,
   Skills,
   ContactUS,
+  Footer,
 } from "./components";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
@@ -63,6 +64,7 @@ function App() {
       <Projects />
       <Experience />
       <ContactUS />
+      <Footer />
     </motion.section>
   );
 }

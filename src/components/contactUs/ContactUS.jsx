@@ -8,7 +8,7 @@ import contactUsLeftImg from "../assets/Lotties/animation_ljzeni6i.json";
 const ContactUS = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
-  let mainControls = useAnimation();
+  const mainControls = useAnimation();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -27,15 +27,22 @@ const ContactUS = () => {
   };
   useEffect(() => {
     if (isInView) {
-      mainControls.start({ x: 0 });
+      console.log("fuck you bitch ");
+      mainControls.start({ translateY: 0, opacity: 1 });
     } else {
-      mainControls.start({ x: -1000 });
+      console.log("you too");
+      mainControls.start({ translateY: 40, opacity: 0 });
     }
-  }, []);
+  }, [isInView]);
 
   return (
-    <section className="contactUSContainer" id="contacUs">
-      <div className="subContainer">
+    <motion.section className="contactUSContainer" id="contactUs">
+      <motion.div
+        className="subContainer"
+        ref={ref}
+        animate={mainControls}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
         <div className="left">
           <Lottie
             options={{
@@ -50,14 +57,13 @@ const ContactUS = () => {
         </div>
         <div className="right">
           <div className="top">
-            <motion.div
-              initial={{ x: 1000, width: "100%" }}
-              animate={{ x: 0 }}
-              transition={{ duration: 0.5 }}
+            <div
+              // initial={{ x: 1000, width: "100%" }}
+
               className="subtitle text_center"
             >
               Get in Touch
-            </motion.div>
+            </div>
             <div className="title text_center">
               <AnimatedTextCharacter text={"Contact Us"} />
             </div>
@@ -121,8 +127,8 @@ const ContactUS = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 

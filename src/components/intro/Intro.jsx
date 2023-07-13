@@ -10,19 +10,30 @@ import {
   SiGeeksforgeeks,
 } from "react-icons/si";
 
+const links = {
+  leetcode: "https://leetcode.com/adityawaskar03/",
+  linkedin: "https://www.linkedin.com/in/aditya-waskar-56682b205/",
+  hackerrank: "https://www.hackerrank.com/adityawaskar05",
+  git: "https://github.com/AdityaWaskar",
+  codingninja:
+    "https://www.codingninjas.com/studio/profile/21dda754-c75b-41d5-a88c-075bc7b1b12e",
+  gfg: "https://auth.geeksforgeeks.org/user/adityawaskar03",
+  codechef: "https://www.codechef.com/users/adityawaskar03",
+};
+
 const onButtonClick = () => {
   // using Java Script method to get PDF file
-  // fetch("resume.pdf").then((response) => {
-  //   response.blob().then((blob) => {
-  //     // Creating new object of PDF file
-  //     const fileURL = window.URL.createObjectURL(blob);
-  //     // Setting various property values
-  //     let alink = document.createElement("a");
-  //     alink.href = fileURL;
-  //     alink.download = "adityawaskar.pdf";
-  //     alink.click();
-  //   });
-  // });
+  fetch("../assets/adityaWaskarResume.pdf").then((response) => {
+    response.blob().then((blob) => {
+      // Creating new object of PDF file
+      const fileURL = window.URL.createObjectURL(blob);
+      // Setting various property values
+      let alink = document.createElement("a");
+      alink.href = fileURL;
+      alink.download = "adityawaskar.pdf";
+      alink.click();
+    });
+  });
 };
 const Intro = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -119,8 +130,10 @@ const Intro = () => {
         </motion.div>
       </div>
       <div className="buttons">
-        <button>Download CV</button>
-        <button>Let's Talk</button>
+        <button onClick={onButtonClick}>Download CV</button>
+        <button onClick={() => (window.location.href = "#contactUs")}>
+          Let's Talk
+        </button>
       </div>
       <div className="links">
         <motion.a
@@ -135,7 +148,7 @@ const Intro = () => {
               duration: 0.2,
             },
           }}
-          href="/"
+          href={links.leetcode}
         >
           <SiLeetcode size={25} />
         </motion.a>
@@ -151,7 +164,7 @@ const Intro = () => {
               duration: 0.2,
             },
           }}
-          href="/"
+          href={links.codingninja}
         >
           <SiCodingninjas size={25} />
         </motion.a>
@@ -167,7 +180,7 @@ const Intro = () => {
               duration: 0.2,
             },
           }}
-          href="/"
+          href={links.codechef}
         >
           <SiCodechef size={25} />
         </motion.a>
@@ -183,7 +196,7 @@ const Intro = () => {
               duration: 0.2,
             },
           }}
-          href=""
+          href={links.gfg}
         >
           <SiGeeksforgeeks size={25} />
         </motion.a>
