@@ -10,13 +10,13 @@ const LaptopScreen = (props) => {
   const animation = useAnimation();
 
   useEffect(() => {
-    console.log(props.select);
+    // console.log(props.select);
     if (isInView) {
       animation.start({ scale: 1 });
     } else {
       animation.start({ scale: 0 });
     }
-    console.log(isInView);
+    // console.log(isInView);
   }, [isInView]);
   return (
     <div ref={ref} className="leftSideContainer">

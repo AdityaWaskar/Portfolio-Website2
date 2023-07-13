@@ -51,10 +51,10 @@ const Projects = () => {
     } else {
       mainControls.start({ x: -1000 });
     }
-    console.log(isInView);
+    // console.log(isInView);
   }, [isInView]);
   return (
-    <div className="projectContainer">
+    <section className="projectContainer" id="projects">
       <div ref={ref} className="top text_center">
         <motion.div animate={mainControls} className="subtitle text_center">
           What Projects I Have
@@ -71,7 +71,7 @@ const Projects = () => {
           select={select}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

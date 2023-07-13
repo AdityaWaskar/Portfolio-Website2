@@ -57,3 +57,14 @@ nav .routes .link:hover .icon svg path
     color: var(--main-color);
 }
 
+nav .routes .active{
+    border-right: 4px solid var(--main-color);
+}
+
+nav .routes .active .link_text,
+nav .routes .active .icon svg path
+{
+    color: var(--main-color);
+}
+
+

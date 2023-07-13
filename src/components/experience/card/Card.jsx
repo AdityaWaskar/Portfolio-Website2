@@ -1,9 +1,13 @@
 import React from "react";
 import "./card.css";
+import { motion } from "framer-motion";
 
 const Card = (props) => {
+  const onclickEvent = () => {
+    props.setIsOpen(true);
+  };
   return (
-    <div className="experienceCard">
+    <motion.div className="experienceCard" onClick={onclickEvent}>
       <div className="mainContent">
         <div className="title">{props.info.post}</div>
         <div className="date">
@@ -11,7 +15,7 @@ const Card = (props) => {
         </div>
       </div>
       <div className="desc">{props.info.desc}</div>
-    </div>
+    </motion.div>
   );
 };
 

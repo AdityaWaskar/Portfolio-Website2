@@ -68,7 +68,7 @@ const Intro = () => {
   };
 
   return (
-    <div className="introContainer" id="intro">
+    <section className="introContainer" id="intro">
       <motion.div
         className="mainPhoto"
         initial={{ opacity: 0, scale: 0.5 }}
@@ -188,7 +188,7 @@ const Intro = () => {
           <SiGeeksforgeeks size={25} />
         </motion.a>
       </div>
-    </div>
+    </section>
   );
 };
 

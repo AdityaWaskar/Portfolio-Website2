@@ -76,10 +76,10 @@ const Skills = () => {
     } else {
       mainControls.start({ x: -1000 });
     }
-    console.log(isInView);
+    // console.log(isInView);
   }, [isInView]);
   return (
-    <div className="skillsContainer">
+    <section className="skillsContainer" id="skills">
       <div ref={ref} className="top">
         <motion.div animate={mainControls} className="subtitle">
           What Skills I Have
@@ -92,7 +92,7 @@ const Skills = () => {
         <Card skills={frontendSkills} title={"Frontend Development"} />
         <Card skills={backendSkills} title={"Backend Development"} />
       </div>
-    </div>
+    </section>
   );
 };
 

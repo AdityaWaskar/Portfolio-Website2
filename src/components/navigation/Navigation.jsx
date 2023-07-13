@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, stagger } from "framer-motion";
 import { CgWebsite, CgProfile } from "react-icons/cg";
 import { FaBars, FaFileCode } from "react-icons/fa";
 import { MdOutlineWork } from "react-icons/md";
@@ -17,27 +17,27 @@ const navElements = [
   {
     name: "Skills",
     icon: <FaFileCode size={30} />,
-    link: "#intro",
+    link: "#skills",
   },
   {
     name: "Projects",
     icon: <CgWebsite size={30} />,
-    link: "#intro",
+    link: "#projects",
   },
   {
     name: "Experience",
     icon: <MdOutlineWork size={30} />,
-    link: "#intro",
+    link: "#experiences",
   },
   {
     name: "Contact Us",
     icon: <AiFillMail size={30} />,
-    link: "#intro",
+    link: "#contacUs",
   },
 ];
 
 const Navigation = () => {
-  const [navElement, setNavElement] = useState(navElements[0]);
+  const [navElement, setNavElement] = useState(navElements[0].name);
   const [isOpen, setIsOpen] = useState(false);
 
   const slidebarAnimation = {
@@ -82,7 +82,12 @@ const Navigation = () => {
         </div>
         <div className="routes">
           {navElements.map((element) => (
-            <a key={element.name} href={element.link} className="link">
+            <a
+              key={element.name}
+              href={element.link}
+              className={navElement === element.name ? "link active" : "link"}
+              onClick={() => setNavElement(element.name)}
+            >
               <div className="icon">{element.icon}</div>
               <AnimatePresence>
                 {isOpen && (
@@ -91,6 +96,7 @@ const Navigation = () => {
                     initial="hidden"
                     animate="show"
                     exit="hidden"
+                    transition={{ delay: stagger(0.05), at: "-0.1" }}
                     className="link_text"
                   >
                     {element.name}

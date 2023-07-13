@@ -1,0 +1,110 @@
+.contactUSContainer{
+    min-height: 100vh;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.contactUSContainer .subContainer{
+    display: flex;   
+    width: 95vw;
+}
+
+.contactUSContainer .left{
+    /* background-color: red; */
+    margin-left: 70px;
+    flex: 1;
+    padding: 10px;
+}
+
+.contactUSContainer .right{
+    /* background-color: cyan; */ 
+    flex: 1;
+}
+
+.contactUSContainer .top .subtitle{
+    font-size: .9rem;
+    color: silver; 
+    width: 100%;
+}
+ 
+.contactUSContainer .top .title{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--main-color);
+    padding-bottom: 30px;
+}
+
+.contactUSContainer .bottom .inputBox{
+    position: relative;
+    width: 40%;
+}
+.contactUSContainer .bottom .inputBox :is(input, textarea){
+    width: 100%;
+    padding:  10px;
+    border: 1px solid var(--main-color);
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+}
+
+.contactUSContainer .bottom .inputBox label{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.contactUSContainer .bottom .inputBox :is(input, textarea):valid ~ label,
+.contactUSContainer .bottom .inputBox :is(input, textarea):focus ~ label{
+    color: var(--main-color);
+    background-color: black;
+    transform: translateX(10px) translateY(-20px);
+    font-size: .6rem;
+    border-left: 1px solid var(--main-color);
+    border-right: 1px solid var(--main-color);
+    letter-spacing: 0.2em;
+
+}
+
+.contactUSContainer .bottom .inputBox :is(input, textarea):valid ,
+.contactUSContainer .bottom .inputBox :is(input, textarea):focus {
+    border: 1px solid var(--main-color);
+}
+
+.contactUSContainer .bottom .row{
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactUSContainer .bottom :is(.email, .feedback){
+    width: 100%;
+}
+
+.contactUSContainer .bottom .row button{
+    margin-top: 10px;
+    background-color: var(--main-color);
+    color: black;
+    font-weight: 600;
+    font-size: 1.1rem;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.contactUSContainer .bottom{
+    display: flex;
+    justify-content: center;
+}
+
+.contactUSContainer .bottom .form{
+    width: 80%;
+}
