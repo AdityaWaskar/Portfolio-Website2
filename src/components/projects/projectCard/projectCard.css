@@ -1,0 +1,65 @@
+.projectCardContainer{
+    overflow-x: hidden;
+
+    margin-top: 50px;
+    width: 300px; 
+    background-color: #2b2866;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 400px;
+}
+
+.projectCardContainer .coverImg{
+    /* flex: 1; */
+    height: 150px;
+}
+
+.projectCardContainer .coverImg img{
+    border-radius: 10px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.projectCardContainer .content{
+    display: flex;
+    height: 350px;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.projectCardContainer .content .title{
+    color: white;
+    font-weight: 600;
+}
+
+.projectCardContainer .content .desc{
+    flex: 2;
+    color: #dcd6d6ed;
+    font-size: .8rem;
+    text-align: justify;
+}
+
+.projectCardContainer .content .button{
+    display: flex;
+    gap: 20px;
+}
+
+.projectCardContainer .content .button button{
+    flex: 1;
+    border-radius: 5px;
+}
+
+.projectCardContainer .content .button button:first-child{
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+.projectCardContainer .content .button button:last-child{
+    background-color: var(--main-color);
+    color: #2b2866;
+}
