@@ -88,4 +88,59 @@
     color: var(--main-color);
 }
 
- 
+ /* ============Media Query================= */
+
+ @media only screen and (max-width: 1334px) {
+    .introContainer .mainPhoto {
+        height: 45vh;
+    }
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+    .introContainer .mainPhoto {
+        height: 40vh;
+        width: 28vw;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .introContainer .mainPhoto {
+        width: 32vw;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .introContainer .mainPhoto {
+        width: 38vw;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .introContainer .mainPhoto {
+        width: 60vw;
+        height: 50vh;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .introContainer{
+        height: auto;
+        padding-bottom: 12vh;
+    }
+    .introContainer .mainPhoto {
+        width: 70vw;
+        height: 38vh;
+    }
+
+    .introContainer .links{
+        top: 125px;
+    }
+
+    #name{
+        font-size: 2.5rem;
+        padding-top: 2vh;
+    }
+    .introContainer .buttons {
+        padding-top: 66px; 
+    }
+  }
