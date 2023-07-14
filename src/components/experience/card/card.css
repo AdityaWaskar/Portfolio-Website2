@@ -31,3 +31,42 @@
     color: #CACACA;
 }
 
+/* ============Media Query================= */
+
+@media only screen and (max-width: 1217px) { 
+    .experienceCard{
+        width: 30%;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .experienceCard{
+        width: 40%;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+  .experienceCard {
+      width: 42vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+    .experienceCard {
+        width: 60vw;
+        margin-left: 0;
+    }
+
+
+  
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+@media only screen and (max-width: 400px) {
+
+}
+

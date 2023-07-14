@@ -22,7 +22,7 @@ const experience = [
 const Experience = () => {
   const ref = useRef(null);
   const ref2 = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
   const animation1Logic = useAnimation();
   const animation2Logic = useAnimation();
@@ -39,24 +39,13 @@ const Experience = () => {
       mainControls.start({ x: 0 });
       if (titleAnimation === true) {
         animation1Logic.start({ height: "30%" });
-        // console.log("animation1" + animation1);
       }
       if (animation1 === true) {
         animation2Logic.start({ opacity: 1 });
-        // console.log("animation2" + animation2);
       }
       if (animation1 === true && animation2 === true) {
         animation3Logic.start({ height: "50%" });
-        // console.log("animation3" + animation3);
       }
-
-      // mainControls.start({ x: 0 });
-      // setTimeout(() => animation1Logic.start({ height: "30%" }), 500);
-      // setTimeout(() => animation2Logic.start({ opacity: 1 }), 1500);
-      // setTimeout(() => animation3Logic.start({ height: "50%" }), 2800);
-      // animation1Logic.start({ height: "30%" });
-      // animation2Logic.start({ opacity: 1 });
-      // animation3Logic.start({ height: "50%" });
     } else {
       mainControls.start({ x: -1000 });
       animation1Logic.start({ height: 0 });

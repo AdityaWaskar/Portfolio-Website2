@@ -35,3 +35,49 @@
 .skillsContainer .down .skillCardContainer:last-child{
     margin-top: 20vh;
 }
+
+
+/* ============Media Query================= */
+
+@media only screen and (max-width: 1217px) {
+    .skillsContainer{
+        height: auto;
+    }
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+    
+  }
+
+  @media only screen and (max-width: 900px) {
+    
+  }
+
+  @media only screen and (max-width: 700px) {
+    .skillsContainer .down .skillCardContainer:last-child {
+        margin-top: 10vh;
+    }
+  }
+
+  @media only screen and (max-width: 577px) {
+
+        .skillsContainer {
+            gap: 5vh;
+            padding-bottom: 68px;
+        }
+        .skillsContainer .down{
+            display: flex;
+            flex-direction: column;
+        }
+        .skillsContainer .down {
+            height: auto;
+            width: auto;
+        }
+        .skillCardContainer {
+            width: 70vw;
+        }
+  }
+  @media only screen and (max-width: 400px) {
+
+  }

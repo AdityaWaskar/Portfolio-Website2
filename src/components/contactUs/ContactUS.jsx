@@ -3,11 +3,19 @@ import "./contactUs.css";
 import { motion, useAnimation, useInView } from "framer-motion";
 import AnimatedTextCharacter from "../AnimatedTextCharacter";
 import Lottie from "react-lottie";
+import emailjs from "@emailjs/browser";
 import contactUsLeftImg from "../assets/Lotties/animation_ljzeni6i.json";
+// import {
+//   REACT_APP_EMAIL_ID,
+//   REACT_APP_EMAIL_TEMPLATE_ID,
+//   REACT_APP_EMAIL_PUBLIC_ID,
+// } from "../../config.js";
+import toast, { Toaster } from "react-hot-toast";
 
 const ContactUS = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const formRef = useRef();
+  const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -21,22 +29,42 @@ const ContactUS = () => {
     setFeedback("");
   };
 
-  const onhandleEvent = () => {
-    console.log(firstName, lastName, email, feedback);
-    clearInputs();
+  const onhandleEvent = async (event) => {
+    event.preventDefault();
+    console.log(
+      process.env.REACT_APP_EMAIL_ID,
+      process.env.REACT_APP_EMAIL_TEMPLATE_ID,
+      formRef.current,
+      process.env.REACT_APP_EMAIL_PUBLIC_ID
+    );
+    await emailjs
+      .sendForm(
+        "service_cwmbm0l",
+        "template_ga6qpot",
+        formRef.current,
+        "HgwNiGlzOqeL_of5r"
+      )
+      .then(
+        (result) => {
+          toast.success("Mail Send Successfully.");
+          clearInputs();
+        },
+        (error) => {
+          toast.error("Some error occuring while sending Mail!");
+        }
+      );
   };
   useEffect(() => {
     if (isInView) {
-      console.log("fuck you bitch ");
       mainControls.start({ translateY: 0, opacity: 1 });
     } else {
-      console.log("you too");
       mainControls.start({ translateY: 40, opacity: 0 });
     }
   }, [isInView]);
 
   return (
     <motion.section className="contactUSContainer" id="contactUs">
+      <Toaster position="top-center" reverseOrder={false} />
       <motion.div
         className="subContainer"
         ref={ref}
@@ -69,7 +97,7 @@ const ContactUS = () => {
             </div>
           </div>
           <div className="bottom">
-            <div className="form">
+            <form ref={formRef} onSubmit={onhandleEvent} className="form">
               <div className="row">
                 <div className=" inputBox first_name">
                   <input
@@ -96,7 +124,7 @@ const ContactUS = () => {
                 <div className=" inputBox email">
                   <input
                     type="text"
-                    name="email"
+                    name="user_email"
                     id="email"
                     value={email}
                     required
@@ -109,7 +137,7 @@ const ContactUS = () => {
                 <div className=" inputBox feedback">
                   {/* <input type="text" name="feedback" id="feedback" required /> */}
                   <textarea
-                    name="feedback"
+                    name="msg"
                     id="feedback"
                     rows="10"
                     value={feedback}
@@ -120,11 +148,9 @@ const ContactUS = () => {
                 </div>
               </div>
               <div className="row">
-                <button onClick={onhandleEvent} className="inputBox">
-                  Send
-                </button>
+                <button className="inputBox">Send</button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </motion.div>

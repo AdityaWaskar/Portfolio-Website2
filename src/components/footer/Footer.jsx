@@ -24,7 +24,7 @@ const Footer = () => {
         fill="#5dcefd"
         paused={false}
         options={{
-          height: 15,
+          height: 18,
           amplitude: 30,
           speed: 0.25,
           points: 4,

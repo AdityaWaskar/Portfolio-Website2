@@ -4,7 +4,7 @@ import { CgEnter } from "react-icons/cg";
 
 const AnimatedTextCharacter = ({ text }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
 
   useEffect(() => {

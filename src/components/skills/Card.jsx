@@ -4,7 +4,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 const Card = (props) => {
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const Card = (props) => {
         scale: 0,
       });
     }
-    console.log(isInView);
+    // console.log(isInView);
   }, [isInView]);
   return (
     <motion.div

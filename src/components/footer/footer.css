@@ -78,3 +78,9 @@ footer .margin span{
     color: purple;
     padding-right: 2px;
 }
+
+@media only screen and (max-width: 920px) { 
+    section .wave{
+        padding-top: 20px;
+    }
+}

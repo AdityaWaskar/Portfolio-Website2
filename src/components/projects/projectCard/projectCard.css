@@ -63,3 +63,32 @@
     background-color: var(--main-color);
     color: #2b2866;
 }
+
+
+/* ============Media Query================= */
+
+@media only screen and (max-width: 1217px) { 
+    
+}
+
+
+@media only screen and (max-width: 1000px) {
+  
+}
+
+@media only screen and (max-width: 900px) {
+ 
+}
+
+@media only screen and (max-width: 700px) {
+  
+}
+
+@media only screen and (max-width: 600px) {
+  
+}
+@media only screen and (max-width: 400px) {
+    .projectCardContainer .content .button button {
+        font-size: 10px;
+    }
+}

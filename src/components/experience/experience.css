@@ -60,3 +60,40 @@
     height: 50%;
 }
  
+/* ============Media Query================= */
+
+@media only screen and (max-width: 1217px) { 
+    
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+    
+  }
+
+  @media only screen and (max-width: 900px) {
+     
+  }
+
+  @media only screen and (max-width: 700px) {
+        .experienceContainer .roadmapLogo{
+            display: none;
+        }
+
+        .experienceContainer { 
+            padding-left: 0; 
+            min-height: auto;
+        }
+        .experienceContainer .bottom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+  }
+  @media only screen and (max-width: 400px) {
+
+  }

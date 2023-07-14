@@ -113,3 +113,45 @@
 .contactUSContainer .bottom .form{
     width: 80%;
 }
+
+/* ============Media Query================= */
+
+@media only screen and (max-width: 1217px) { 
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+    
+  }
+
+  @media only screen and (max-width: 920px) { 
+    .contactUSContainer .left{
+        display: none;
+    }
+    .contactUSContainer .subContainer{
+        width: 100vw;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    
+  }
+
+  @media only screen and (max-width: 500px) {
+    .contactUSContainer .bottom .inputBox {
+        width: 47%;
+    }
+    .contactUSContainer .bottom :is(.email, .feedback){
+        width: 100%;
+    }
+    .contactUSContainer .bottom .inputBox label{
+        font-size: .7rem;
+    }
+    .contactUSContainer .bottom .inputBox :is(input, textarea) {
+        font-size: .8rem;
+    }
+    
+  }
+  @media only screen and (max-width: 400px) {
+
+  }

@@ -151,16 +151,7 @@ const navElements = [
 ];
 
 const Navigation = () => {
-  const [navElement, setNavElement] = useState(navElements[0].name);
-
-  // const slidebarAnimation = {
-  //   hidden: {
-  //     transform: translateY("10px"),
-  //   },
-  //   show: {
-  //     transform: translateY(0),
-  //   },
-  // };
+  const [navElement, setNavElement] = useState(navElements[0].name); 
 
   return (
     <nav>

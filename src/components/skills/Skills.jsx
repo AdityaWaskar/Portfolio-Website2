@@ -75,8 +75,7 @@ const Skills = () => {
       mainControls.start({ x: 0 });
     } else {
       mainControls.start({ x: -1000 });
-    }
-    // console.log(isInView);
+    } 
   }, [isInView]);
   return (
     <section className="skillsContainer" id="skills">
