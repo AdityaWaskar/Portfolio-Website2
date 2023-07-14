@@ -32,7 +32,7 @@ const Card = (props) => {
       <div className="title">{props.title}</div>
       <div className="card">
         {props.skills.map((skill) => (
-          <div className="row">
+          <div className="row" key={skill.name}>
             <div className="tooltip">{skill.level}</div>
             <div className="skill_icon">{skill.icon}</div>
             <div className="skill_name">{skill.name}</div>

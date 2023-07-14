@@ -64,7 +64,7 @@ const Projects = () => {
       </div>
       <div className="bottom">
         {project_list.map((info, i) => (
-          <ProjectCard info={info} i={i} />
+          <ProjectCard info={info} i={i} key={i} />
         ))}
       </div>
     </section>
