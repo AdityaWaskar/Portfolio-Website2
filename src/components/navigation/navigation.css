@@ -1,4 +1,4 @@
-nav{
+/* nav{
     position: fixed;
     top: 35%; 
     left: 0;
@@ -67,4 +67,75 @@ nav .routes .active .icon svg path
     color: var(--main-color);
 }
 
+ */
 
+nav{
+    width: 100vw;
+    /* background-color: red; */
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+nav .navigationContainer{
+    background: #4a4a4a5e;
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 25px;
+    border-radius: 60px;
+}
+
+nav .navigationContainer .round{
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    transition: .5s all;
+}
+
+nav .navigationContainer .round:hover{
+/*     
+    background-color: #474747; */
+    cursor: pointer;
+}
+
+nav .navigationContainer .round .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+} 
+
+ 
+
+nav .navigationContainer .round .icon {
+    background-color: transparent;
+}
+
+nav .navigationContainer .round .icon svg path{
+    color: #bfbfbf; 
+} 
+
+nav .navigationContainer .round:hover .icon svg path
+{
+    color: white
+}
+
+nav .navigationContainer .active .icon svg path
+{
+    color: black;
+}
+
+nav .navigationContainer .active{
+    background-color: var(--main-color);
+}
+
+nav .navigationContainer .active:hover .icon svg path{
+    color: black;
+}

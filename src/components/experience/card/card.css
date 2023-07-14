@@ -11,6 +11,10 @@
     border: 1px solid var(--main-color); 
 }
 
+.experienceCard:hover{
+    cursor: pointer;
+}
+
 .experienceCard .mainContent .title{
     color: var(--main-color);
     font-size: 1.1rem;

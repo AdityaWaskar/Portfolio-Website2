@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       let sections = document.querySelectorAll("section");
-      let navLinks = document.querySelectorAll("nav div div a");
+      let navLinks = document.querySelectorAll("nav div a");
       let currentSectionId = null;
 
       sections.forEach((sec) => {
