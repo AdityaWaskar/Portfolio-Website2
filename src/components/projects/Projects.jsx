@@ -4,7 +4,7 @@ import "../../global.css";
 import { motion, useAnimation, useInView } from "framer-motion";
 import AnimatedTextCharacter from "../AnimatedTextCharacter";
 import ProjectCard from "./projectCard/ProjectCard";
-import { studentPortfolio, mediblock, iBlog } from "../assets";
+import { studentPortfolio, mediblock, iBlog, movix } from "../assets";
 
 const project_list = [
   {
@@ -21,7 +21,7 @@ const project_list = [
     desc: "This application will bring you to a place where you can see the student's all details at a place. Build by using python(Tkinter), mysql.",
     img: studentPortfolio,
     github: "https://github.com/AdityaWaskar/Student_portfolio",
-    link: "https://drive.google.com/file/d/1wH9TpVr5_fNocQso9HNXU4T-D2eHvJjY/view?usp=sharing",
+    link: "/",
   },
   {
     id: 3,
@@ -31,13 +31,14 @@ const project_list = [
     github: "https://github.com/AdityaWaskar/Blog-Website",
     link: "https://iblog-i7li.onrender.com/",
   },
-  // {
-  //   id: 4,
-  //   name: "myMusic",
-  //   desc: "MyMusic website: A dynamic platform created using HTML, CSS, and JavaScript. Explore, stream, and discover your favorite music with a user-friendly interface and interactive features.",
-  //   img: studentPortfolio,
-  //   github: "www",
-  // },
+  {
+    id: 4,
+    name: "Movix",
+    desc: "Crafted engaging React web app with TMDB API integration. Responsive design, Redux state management, shimmer loading effect, infinite scrolling for immersive user experience.",
+    img: movix,
+    github: "https://github.com/AdityaWaskar/Movix.git",
+    link: "https://movix-adityawaskar.vercel.app/",
+  },
 ];
 
 const Projects = () => {
