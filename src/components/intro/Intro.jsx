@@ -9,6 +9,7 @@ import {
   SiCodechef,
   SiGeeksforgeeks,
 } from "react-icons/si";
+import resume from "../assets/resume.pdf";
 
 const links = {
   leetcode: "https://leetcode.com/adityawaskar03/",
@@ -23,7 +24,8 @@ const links = {
 
 const onButtonClick = () => {
   // using Java Script method to get PDF file
-  fetch("../assets/adityaWaskarResume.pdf").then((response) => {
+  fetch(resume).then((response) => {
+    // fetch("../assets/adityaWaskarResume.pdf").then((response) => {
     response.blob().then((blob) => {
       // Creating new object of PDF file
       const fileURL = window.URL.createObjectURL(blob);

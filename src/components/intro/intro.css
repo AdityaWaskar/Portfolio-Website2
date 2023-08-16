@@ -144,3 +144,9 @@
         padding-top: 66px; 
     }
   }
+
+@media only screen and (max-width: 300px) {
+    .introContainer .mainPhoto{
+        height: 34vh;
+    }
+}

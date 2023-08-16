@@ -4,7 +4,13 @@ import "../../global.css";
 import { motion, useAnimation, useInView } from "framer-motion";
 import AnimatedTextCharacter from "../AnimatedTextCharacter";
 import ProjectCard from "./projectCard/ProjectCard";
-import { studentPortfolio, mediblock, iBlog, movix } from "../assets";
+import {
+  studentPortfolio,
+  mediblock,
+  iBlog,
+  movix,
+  codeyantra,
+} from "../assets";
 
 const project_list = [
   {
@@ -25,19 +31,27 @@ const project_list = [
   },
   {
     id: 3,
-    name: "iBlog",
-    desc: "Responsive Blog Website build with HTML and CSS, Offering a seamless user experience across various devices. Customize the layout and design with CSS.",
-    img: iBlog,
-    github: "https://github.com/AdityaWaskar/Blog-Website",
-    link: "https://iblog-i7li.onrender.com/",
-  },
-  {
-    id: 4,
     name: "Movix",
     desc: "Crafted engaging React web app with TMDB API integration. Responsive design, Redux state management, shimmer loading effect, infinite scrolling for immersive user experience.",
     img: movix,
     github: "https://github.com/AdityaWaskar/Movix.git",
     link: "https://movix-adityawaskar.vercel.app/",
+  },
+  {
+    id: 4,
+    name: "Codeyantra",
+    desc: "Creating dynamic frontend with React.js. Firebase for real-time data storage. Framer Motion for engaging animations. Interactive, efficient, and user-friendly web applications.",
+    img: codeyantra,
+    github: "https://github.com/AdityaWaskar/Codeyantra-Website",
+    link: "https://codeyantra-slrtce.netlify.app/",
+  },
+  {
+    id: 3,
+    name: "iBlog",
+    desc: "Responsive Blog Website build with HTML and CSS, Offering a seamless user experience across various devices. Customize the layout and design with CSS.",
+    img: iBlog,
+    github: "https://github.com/AdityaWaskar/Blog-Website",
+    link: "https://iblog-i7li.onrender.com/",
   },
 ];
 
