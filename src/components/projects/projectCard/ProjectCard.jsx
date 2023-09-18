@@ -33,16 +33,23 @@ const ProjectCard = (props) => {
         <img src={props.info.img} alt="" />
       </div>
       <div className="content">
-        <div className="title">{props.info.name}</div>
-        <div className="desc">{props.info.desc}</div>
-        <div className="button">
+        <div className="tags">
+          {props.info.tags?.map((t) => (
+            <span className="tag">{t}</span>
+          ))}
+        </div>
+        <div className="subContent">
+          <div className="title">{props.info.name}</div>
+          <div className="desc">{props.info.desc}</div>
+        </div>
+        {/* <div className="button">
           <button onClick={() => onClickEvent(props.info.github)}>
             Github
           </button>
           <button onClick={() => onClickEvent(props.info.link)}>
             Live Demo
           </button>
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );
