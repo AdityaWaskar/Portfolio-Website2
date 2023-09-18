@@ -2,7 +2,7 @@
     background-color: black;
     min-height: 100vh;
     width: auto;
-    padding-left: 100px;
+    /* padding-left: 100px; */
     overflow: hidden;
     padding-top: 30px ;
 }
@@ -24,12 +24,40 @@
     position: relative;
     height: 80vh;
     display: flex;
+    gap: 30px;
     flex-direction: column;
     justify-content: center;
-
+    align-items: center;
 }
 
-.experienceContainer .roadmapLogo{
+.experienceContainer .subSection{
+    display: flex;
+    gap: 35px;
+    height: 33vh;
+}
+
+.experienceContainer .subSection .left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+.experienceContainer .vertical_line{
+    height: 100%; 
+}
+
+.experienceContainer .vertical_line div{
+    width: 2px;
+    height: 100%; 
+    background-color: var(--main-color);
+}
+
+.experienceContainer .left svg path{
+    color: var(--main-color);
+}
+
+/* .experienceContainer .roadmapLogo{
     position: absolute;
     left: 0;
     top: 0;
@@ -42,7 +70,6 @@
 .experienceContainer .verticalLine{
     width: 2px;
     height: 30%;
-    /* background: linear-gradient(180deg, var(--main-color), var(--main-color), #4fcefd00); */
     background-color: var(--main-color);
     box-shadow: 0px 0px 37px 7px rgba(0, 208, 255, 0.352);  
 }
@@ -55,10 +82,9 @@
 }
 
 .experienceContainer .v2{
-    /* background: linear-gradient(180deg, #4fcefd00,var(--main-color), var(--main-color), #4fcefd00); */
     background-color: var(--main-color);
     height: 50%;
-}
+} */
  
 /* ============Media Query================= */
 

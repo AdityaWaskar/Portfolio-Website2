@@ -5,12 +5,21 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import AnimatedTextCharacter from "../AnimatedTextCharacter";
 import Card from "./card/Card";
 import { MdWork } from "react-icons/md";
+import { BiRadioCircle } from "react-icons/bi";
 import CertificateCard from "../certificateCard/CertificateCard";
 import certificate1 from "../assets/certificates/certificate1.png";
 
 const experience = [
   {
     id: 1,
+    post: "Web Developer",
+    start_date: "03/2023",
+    end_date: "06/2023",
+    desc: "I developed Parinaam, a comprehensive result portal for multiple colleges across states. My contributions involved integrating data, enhancing user experience, and ensuring robust security measures. Parinaam serves as a centralized platform for efficient and reliable result management.",
+    img: certificate1,
+  },
+  {
+    id: 2,
     post: "Web Developer",
     start_date: "03/2023",
     end_date: "06/2023",
@@ -79,12 +88,25 @@ const Experience = () => {
             setIsOpen={setIsOpen}
           />
         )}
-        <Card
-          setIsOpen={setIsOpen}
-          info={experienceSelect}
-          setExperienceSelect={setExperienceSelect}
-        />
-        <div className="roadmapLogo" ref={ref2}>
+        {experience?.map((e) => (
+          <div className="subSection">
+            <div className="left">
+              <div className="logo">
+                <BiRadioCircle size={20} />
+              </div>
+              <div className="vertical_line">
+                <div></div>
+              </div>
+            </div>
+            <Card
+              setIsOpen={setIsOpen}
+              info={experienceSelect}
+              setExperienceSelect={setExperienceSelect}
+            />
+          </div>
+        ))}
+
+        {/* <div className="roadmapLogo" ref={ref2}>
           <motion.div
             animate={animation1Logic}
             className="verticalLine v1"
@@ -109,7 +131,7 @@ const Experience = () => {
               onAnimationComplete={() => setAnimation3(true)}
             ></motion.div>
           )}
-        </div>
+        </div> */}
       </div>
     </section>
   );

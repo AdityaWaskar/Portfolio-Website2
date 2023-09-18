@@ -132,7 +132,7 @@ const Intro = () => {
         </motion.div>
       </div>
       <div className="buttons">
-        <button onClick={onButtonClick}>Download CV</button>
+        <button onClick={onButtonClick}>Check Resume</button>
         <button onClick={() => (window.location.href = "#contactUs")}>
           Let's Talk
         </button>
