@@ -18,7 +18,7 @@ const Footer = () => {
     window.location.href = data[name];
   };
   return (
-    <section>
+    <section className="footerSection">
       <Wave
         className="wave"
         fill="#5dcefd"

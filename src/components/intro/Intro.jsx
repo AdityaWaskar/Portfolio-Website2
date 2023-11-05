@@ -82,6 +82,10 @@ const Intro = () => {
 
   return (
     <section className="introContainer" id="intro">
+      <div className="background">
+        <img src={intro} alt="" />
+      </div>
+      <div className="background opacity-shade"></div>
       <motion.div
         className="mainPhoto"
         initial={{ opacity: 0, scale: 0.5 }}
@@ -126,7 +130,7 @@ const Intro = () => {
           transition={{ delay: 0.1, duration: 0.5 }}
           style={{ textAlign: "center" }}
         >
-          <span style={{ color: "black" }}>s</span>
+          <span style={{ color: "black" }}></span>
           {text}
           <span id="textCursor">│</span>
         </motion.div>

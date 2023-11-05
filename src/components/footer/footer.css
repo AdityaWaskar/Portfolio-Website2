@@ -1,8 +1,8 @@
-section{
+.footerSection{
     background-color: #000000; 
 }
 
-section .wave{
+.footerSection .wave{
     position: relative;
     top: 10px;
 } 
