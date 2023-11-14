@@ -1,6 +1,5 @@
 .projectCardContainer{
     overflow-x: hidden;
-
     margin-top: 50px;
     width: 300px; 
     background-color: #00daff42;
@@ -10,7 +9,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    height: 400px;
+    height: 450px;
 }
 
 .projectCardContainer .coverImg{
@@ -54,7 +53,7 @@
     font-size: .8rem;
     text-align: justify;
 }
-/* 
+
 .projectCardContainer .content .button{
     display: flex;
     gap: 20px;
@@ -73,7 +72,7 @@
 .projectCardContainer .content .button button:last-child{
     background-color: var(--main-color);
     color: #2b2866;
-} */
+}
 
 .projectCardContainer .content .tags{
     display: flex;    

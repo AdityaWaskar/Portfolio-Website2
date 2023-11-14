@@ -42,14 +42,14 @@ const ProjectCard = (props) => {
           <div className="title">{props.info.name}</div>
           <div className="desc">{props.info.desc}</div>
         </div>
-        {/* <div className="button">
+        <div className="button">
           <button onClick={() => onClickEvent(props.info.github)}>
             Github
           </button>
           <button onClick={() => onClickEvent(props.info.link)}>
             Live Demo
           </button>
-        </div> */}
+        </div>
       </div>
     </motion.div>
   );
