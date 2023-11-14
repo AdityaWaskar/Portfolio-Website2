@@ -15,17 +15,18 @@ const experience = [
     post: "Web Developer",
     start_date: "03/2023",
     end_date: "06/2023",
+    organization_name : "Rolling Notes",
     desc: "I developed Parinaam, a comprehensive result portal for multiple colleges across states. My contributions involved integrating data, enhancing user experience, and ensuring robust security measures. Parinaam serves as a centralized platform for efficient and reliable result management.",
     img: certificate1,
   },
-  {
-    id: 2,
-    post: "Web Developer",
-    start_date: "03/2023",
-    end_date: "06/2023",
-    desc: "I developed Parinaam, a comprehensive result portal for multiple colleges across states. My contributions involved integrating data, enhancing user experience, and ensuring robust security measures. Parinaam serves as a centralized platform for efficient and reliable result management.",
-    img: certificate1,
-  },
+  // {
+  //   id: 2,
+  //   post: "Web Developer",
+  //   start_date: "03/2023",
+  //   end_date: "06/2023",
+  //   desc: "I developed Parinaam, a comprehensive result portal for multiple colleges across states. My contributions involved integrating data, enhancing user experience, and ensuring robust security measures. Parinaam serves as a centralized platform for efficient and reliable result management.",
+  //   img: certificate1,
+  // },
 ];
 
 const Experience = () => {

@@ -26,10 +26,15 @@
     color: #D8D8D8;
 }
 
-.experienceCard .desc{
+
+.experienceCard :is(.desc, .name){
     font-size: .8rem;
     text-align: justify;
     color: #CACACA;
+}
+.experienceCard .name{
+    font-style: italic; 
+    font-weight: 700;
 }
 
 /* ============Media Query================= */

@@ -41,6 +41,7 @@ const Card = (props) => {
           <div className="date">
             {props.info.start_date} - {props.info.end_date}
           </div>
+          <div className="name">{props.info.organization_name}</div>
         </div>
         <div className="desc">{props.info.desc}</div>
       </motion.div>
